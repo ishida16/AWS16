@@ -22,7 +22,7 @@
                 <!-- <p class='body'>This is a sample body.</p> -->
                 <p class='body'>{{ $post->body }}</p>
                 <div class="category">
-                    <a href="/categories/{{ $post->category->id }}">{{ $post->category->name }}</a>
+                    <a href="">{{ $post->category->name }}</a>
                 </div>
                 <form action="/posts/{{ $post->id }}" id="form_{{ $post->id }}" method="post">
                     @csrf
@@ -44,5 +44,8 @@
                 }
             }
         </script>
+        <div class="footer">
+            <a href="/">戻る</a>
+        </div>
     </body>
 </html>
