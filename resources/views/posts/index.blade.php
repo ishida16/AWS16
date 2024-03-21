@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<x-app-layout>
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            {{ __('index') }}
+        </h2>
+    </x-slot>
     <head>
         <meta charset="utf-8">
         <title>Blog</title>
@@ -45,4 +51,5 @@
             }
         </script>
     </body>
+</x-app-layout>
 </html>
