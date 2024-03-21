@@ -41,6 +41,9 @@
         <div class='paginate'>
             {{ $posts->links() }}
         </div>
+        <p class='username'>
+            ログイン：{{ Auth::user()->name }}
+        </p>
         <script>
             function deletePost(id) {
                 'use strict'
